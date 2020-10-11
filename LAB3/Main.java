@@ -4,13 +4,12 @@ public class Main
 {
   public static void main (String[]args) 
   {
-    //BufferedReader reader = new BufferedReader (new InputStreamReader (System.in));
+    //Words should be separated by strictly one space and optionally other special characters.
+    //And one last space character as the last character.
+    //OK: "asdf asdf, asdf,., "
+    //Not ok: "asdf.asdf,  asdf.asdf"
     
-    // Reading data using readLine 
-    //String name = reader.readLine(); 
-    
-    // Printing the read line 
-    Text text = new Text();
+    Text text = new Text("e a e d c bee a a a d d "); 
     //System.out.println(text.getData());   
     System.out.println("Sentence Count:" + text.getSentenceCount());   
     System.out.println("Word Count:" + text.getWordCount());   
