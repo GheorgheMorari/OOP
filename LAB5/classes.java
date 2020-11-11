@@ -13,7 +13,7 @@ class A{
         this.a = a;
         this.x = x;
     }
-    void print(){
+    public void print(){
         System.out.println("A " + this.a);
         x.print();
     }
@@ -24,7 +24,7 @@ class B extends A {
         super("B-AAA");
         this.b = b;
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("B " + this.b);
         x.print();
@@ -36,7 +36,7 @@ class C extends B {
         super("C-BBB");
         this.c = c;
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("C " + this.c);
         x.print();
@@ -50,7 +50,7 @@ class D extends C {
         this.d = d;
         this.x = new X("D's X");
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("D " + this.d);
         x.print();
@@ -62,7 +62,7 @@ class E extends D {
         super("E-DDD");
         this.e = e;
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("E " + this.e);
         x.print();
@@ -74,7 +74,7 @@ class F extends E {
         super("F-EEE");
         this.f = f;
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("F " + this.f);
         x.print();
@@ -86,7 +86,7 @@ class G extends F {
         super("G-FFF");
         this.g = g;
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("G " + this.g);
         x.print();
@@ -98,7 +98,7 @@ class H extends G {
         super("H-GGG");
         this.h = h;
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("H " + this.h);
         x.print();
@@ -112,7 +112,7 @@ class I extends H {
         this.i = i;
         this.x = new X("I's private X");
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("I " + this.i);
         x.print();
@@ -126,7 +126,7 @@ class J extends I {
         this.j = j;
         this.x = new X("J's protected x");
     }
-    void print(){
+    public void print(){
         super.print();
         System.out.println("J " + this.j);
         x.print();
@@ -138,7 +138,7 @@ class X extends A {
         //super(x);
         this.x = x;
     }
-    void print(){
+    public void print(){
         //System.out.println("X ");
         System.out.println(this.x);
     }
